@@ -17,9 +17,13 @@ public class App {
         // amazon.testCase01();
         // amazon.endTest();
 
-        hyperlinksCount count = new hyperlinksCount();
-        count.testCase01();
-        count.endTest();
+        // hyperlinksCount count = new hyperlinksCount();
+        // count.testCase01();
+        // count.endTest();
+
+        linkedInPost post=new linkedInPost();
+        post.testCase01();
+        post.endTest();
     }
 
     public static void main(String[] args) throws InterruptedException, MalformedURLException {
