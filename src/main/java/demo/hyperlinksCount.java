@@ -1,5 +1,6 @@
 package demo;
 import java.time.Duration;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -15,9 +16,9 @@ import org.openqa.selenium.support.ui.Select;
 ///
 
 
-public class AmazonSearch {
+public class hyperlinksCount {
     ChromeDriver driver;
-    public AmazonSearch()
+    public hyperlinksCount()
     {
         System.out.println("Constructor: TestCases");
         WebDriverManager.chromedriver().timeout(30).setup();
@@ -34,21 +35,14 @@ public class AmazonSearch {
 
     }
 
-    
     public  void testCase01(){ try {
-        System.out.println("Start Test case: Amazon Search");
-        driver.get("https://www.google.com/");
-        WebElement searchBox= driver.findElement(By.id("APjFqb"));
-        searchBox.sendKeys("amazon");
-        searchBox.sendKeys(Keys.ENTER);
-        Thread.sleep(3000);
-        boolean displayed =driver.findElement(By.xpath("//a[contains(@href,'amazon.in')]")).isDisplayed();
-        if(displayed){
-            System.out.println("Found the link");
-        }else{
-            System.out.println("No link is found");
-        }
-        System.out.println("End Test case: Amazon Search");      
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        System.out.println("Start Test case: Hyperlinks Count");
+        driver.get("https://in.bookmyshow.com/explore/home/chennai");
+        List<WebElement> hyperlinks= driver.findElements(By.tagName("a"));
+        int count = hyperlinks.size();
+        System.out.println("count of hyperlinks is :"+count);
+        System.out.println("End Test case: Hyperlinks Count");      
     } catch (Exception e) {
         System.out.println(e);
     

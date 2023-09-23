@@ -4,7 +4,7 @@
 package demo;
 import java.net.MalformedURLException;
 
-import main.java.demo.AmazonSearch;
+import demo.AmazonSearch;
 
 
 public class App {
@@ -13,9 +13,13 @@ public class App {
         // tests.testCase01();
         // tests.endTest(); // End your test by clearning connections and closing browser
 
-        AmazonSearch amazon = new AmazonSearch();
-        amazon.testCase01();
-        amazon.endTest();
+        // AmazonSearch amazon = new AmazonSearch();
+        // amazon.testCase01();
+        // amazon.endTest();
+
+        hyperlinksCount count = new hyperlinksCount();
+        count.testCase01();
+        count.endTest();
     }
 
     public static void main(String[] args) throws InterruptedException, MalformedURLException {
