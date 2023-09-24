@@ -25,9 +25,13 @@ public class App {
         // post.testCase01();
         // post.endTest();
 
-        imageURLs bmsImage= new imageURLs();
-        bmsImage.testCase01();
-        bmsImage.endTest();
+        // imageURLs bmsImage= new imageURLs();
+        // bmsImage.testCase01();
+        // bmsImage.endTest();
+
+        NestedFrames frames = new NestedFrames();
+        frames.testCase01();
+        frames.endTest();
     }
 
     public static void main(String[] args) throws InterruptedException, MalformedURLException {

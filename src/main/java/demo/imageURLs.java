@@ -39,7 +39,7 @@ public class imageURLs {
         options.addArguments("--remote-allow-origins=*");
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(150));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
     }
 
@@ -51,7 +51,7 @@ public class imageURLs {
 
     public void testCase01() {
         try {
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(150));
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
             System.out.println("Start Test case: BMS Image URLs");
             // Enter URL https://in.bookmyshow.com/explore/home/chennai
             driver.get("https://in.bookmyshow.com/explore/home/chennai");
