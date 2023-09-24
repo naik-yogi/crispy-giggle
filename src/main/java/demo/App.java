@@ -29,9 +29,13 @@ public class App {
         // bmsImage.testCase01();
         // bmsImage.endTest();
 
-        NestedFrames frames = new NestedFrames();
-        frames.testCase01();
-        frames.endTest();
+        // NestedFrames frames = new NestedFrames();
+        // frames.testCase01();
+        // frames.endTest();
+
+        IMDBRatings ratings = new IMDBRatings();
+        ratings.testCase01();
+        ratings.endTest();
     }
 
     public static void main(String[] args) throws InterruptedException, MalformedURLException {
