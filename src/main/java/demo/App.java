@@ -21,9 +21,13 @@ public class App {
         // count.testCase01();
         // count.endTest();
 
-        linkedInPost post=new linkedInPost();
-        post.testCase01();
-        post.endTest();
+        // linkedInPost post=new linkedInPost();
+        // post.testCase01();
+        // post.endTest();
+
+        imageURLs bmsImage= new imageURLs();
+        bmsImage.testCase01();
+        bmsImage.endTest();
     }
 
     public static void main(String[] args) throws InterruptedException, MalformedURLException {
