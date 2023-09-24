@@ -33,9 +33,13 @@ public class App {
         // frames.testCase01();
         // frames.endTest();
 
-        IMDBRatings ratings = new IMDBRatings();
-        ratings.testCase01();
-        ratings.endTest();
+        // IMDBRatings ratings = new IMDBRatings();
+        // ratings.testCase01();
+        // ratings.endTest();
+
+        WindowsHandle handles = new WindowsHandle();
+        handles.testCase01();
+        handles.endTest();
     }
 
     public static void main(String[] args) throws InterruptedException, MalformedURLException {
